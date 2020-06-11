@@ -1,6 +1,6 @@
 #!/bin/bash
 
-find build -type f -print0 | xargs -0 -I{} sed -i "s/localhost/ccsc.webofweb.server/g" "{}"
+# find build -type f -print0 | xargs -0 -I{} sed -i "s/localhost/ccsc.webofweb.server/g" "{}"
 
 npx serve -s build -l 5001 &
 node api-server &
